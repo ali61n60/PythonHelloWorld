@@ -8,7 +8,7 @@ from selenium.webdriver.chrome.options import Options
 import time
 #####################
 
-browser = webdriver.Chrome('chromedriver.exe')
+browser = webdriver.Chrome('c:\selenium\chromedriver.exe')
 browser.get('https://onlineplus.mofidonline.com/login')
 browser.maximize_window()
 
@@ -52,11 +52,11 @@ gimat = browser.find_element_by_xpath("/html/body/app-container/app-content/div/
 gimat.send_keys("218178")
 time.sleep(1)
 
-#forosh = browser.find_element_by_xpath("/html/body/app-container/app-content/div/div/div/div[3]/div[2]/div/div/widget/div/div/div/div[2]/send-order/div/div[7]/div[2]/a/div")
-#forosh.click()
+forosh = browser.find_element_by_xpath("/html/body/app-container/app-content/div/div/div/div[3]/div[2]/div/div/widget/div/div/div/div[2]/send-order/div/div[7]/div[2]/a/div")
+forosh.click()
 
-#Edame = browser.find_element_by_xpath("/html/body/app-container/app-content/div/div/div/div[3]/div[2]/div/div/widget/div/div/div/div[2]/send-order/div/div[8]/div/div[2]/div[1]")
-#Edame.click()
+Edame = browser.find_element_by_xpath("/html/body/app-container/app-content/div/div/div/div[3]/div[2]/div/div/widget/div/div/div/div[2]/send-order/div/div[8]/div/div[2]/div[1]")
+Edame.click()
 
 
 
